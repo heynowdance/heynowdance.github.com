@@ -1,0 +1,48 @@
+#content {
+  background: url('../../images/2011/winter.png');
+}
+
+.text {
+  position: absolute;
+}
+
+.text h1 {
+  color: #b09bc0;
+  font-size: 84px;
+  font-family: LoboTommyRegular;
+  font-weight: lighter;
+  font-style: normal;
+  margin: 0px;
+}
+
+.text h2 {
+  color: #000000;
+  font-size: 30px;
+  font-weight: lighter;
+  font-style: normal;
+  font-family: Acens;
+  margin: 0px;
+}
+
+#title {
+  width: 790px;
+  top: -10px;
+  left: 10px;
+}
+
+#subtitle {
+  top: 95px;
+  left: 40px;
+  width: 760px;
+}
+
+#main_text {
+  top: 415px;
+  left: 132px;
+  width: 650px;
+}
+
+#contact_info {
+  top: 582px;
+  left: 425px;
+}

@@ -1,0 +1,46 @@
+#content {
+  background: url('../../images/2011/autumn.png');
+}
+
+.text {
+  position: absolute;
+}
+
+.text h1 {
+  color: #b09bc0;
+  font-size: 84px;
+  font-family: LoboTommyRegular;
+  font-weight: lighter;
+  font-style: normal;
+  margin: 0px;
+}
+
+.text h2 {
+  color: #000000;
+  font-size: 30px;
+  font-weight: lighter;
+  font-style: normal;
+  font-family: Acens;
+  margin: 0px;
+}
+
+.text p {
+  color: #b09bc0;
+  font-size: 26px;
+  font-family: Acens;
+  font-weight: lighter;
+  font-style: normal;
+  margin: 0px;
+}
+
+#title {
+  width: 790px;
+  top: 470px;
+  left: 10px;
+}
+
+#subtitle {
+  top: 570px;
+  left: 615px;
+  width: 185px;
+}
