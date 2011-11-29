@@ -25,6 +25,7 @@ body {
   font-size: 84px;
   font-family: 'WebFont', LoboTommyRegular;
   font-weight: lighter;
+  font-style: normal;
   margin: 0px;
 }
 
@@ -32,6 +33,7 @@ body {
   color: #000000;
   font-size: 30px;
   font-weight: lighter;
+  font-style: normal;
   font-family: 'WebFont', Acens;
   margin: 0px;
 }
@@ -57,24 +59,28 @@ body {
   left: 425px;
 }
 
-@font-face {
+@font-face { /* IE */
     font-family: 'LoboTommyRegular';
     src: url('../fonts/lobotommy-webfont.eot');
-    src: url('../fonts/lobotommy-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/lobotommy-webfont.woff') format('woff'),
-         url('../fonts/lobotommy-webfont.ttf') format('truetype'),
-         url('../fonts/lobotommy-webfont.svg#LoboTommyRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
 
-@font-face {
+@font-face { /* The rest of the world */
+  font-family: 'LoboTommyRegular';
+  src: url(http://:/) format("No-IE-404"),
+       url('../fonts/lobotommy-webfont.woff') format('woff'),
+       url('../fonts/lobotommy-webfont.ttf') format('truetype'),
+       url('../fonts/lobotommy-webfont.svg#LoboTommyRegular') format('svg');
+}
+
+@font-face { /* IE */
     font-family: 'Acens';
     src: url('../fonts/acens-webfont.eot');
-    src: url('../fonts/acens-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/acens-webfont.woff') format('woff'),
-         url('../fonts/acens-webfont.ttf') format('truetype'),
-         url('../fonts/acens-webfont.svg#Acens') format('svg');
-    font-weight: normal;
-    font-style: normal;
+}
+
+@font-face { /* The rest of the world */
+  font-family: 'Acens';
+  src: url(http://:/) format("No-IE-404"),
+       url('../fonts/acens-webfont.woff') format('woff'),
+       url('../fonts/acens-webfont.ttf') format('truetype'),
+       url('../fonts/acens-webfont#Acens') format('svg');
 }
