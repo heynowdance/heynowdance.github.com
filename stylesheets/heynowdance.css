@@ -67,9 +67,7 @@ body {
 @font-face { /* The rest of the world */
   font-family: 'LoboTommyRegular';
   src: url(http://:/) format("No-IE-404"),
-       url('../fonts/lobotommy-webfont.woff') format('woff'),
-       url('../fonts/lobotommy-webfont.ttf') format('truetype'),
-       url('../fonts/lobotommy-webfont.svg#LoboTommyRegular') format('svg');
+       url('../fonts/lobotommy-webfont.ttf') format('truetype');
 }
 
 @font-face { /* IE */
@@ -80,7 +78,5 @@ body {
 @font-face { /* The rest of the world */
   font-family: 'Acens';
   src: url(http://:/) format("No-IE-404"),
-       url('../fonts/acens-webfont.woff') format('woff'),
-       url('../fonts/acens-webfont.ttf') format('truetype'),
-       url('../fonts/acens-webfont#Acens') format('svg');
+       url('../fonts/acens-webfont.ttf') format('truetype');
 }
