@@ -3,7 +3,7 @@ body {
 }
 
 #container {
-  margin-top: 30px;
+  padding: 30px;
   position: absolute;
   left: 50%;
 }
