@@ -61,14 +61,16 @@ body {
 
 @font-face {
   font-family: 'LoboTommyRegular';
-  src: url('../fonts/lobotommy-webfont.woff') format('woff'),
+  src: url('../fonts/lobotommy-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/lobotommy-webfont.woff') format('woff'),
        url('../fonts/lobotommy-webfont.ttf') format('truetype'),
        url('../fonts/lobotommy-webfont.svg#LoboTommyRegular') format('svg');
 }
 
 @font-face {
   font-family: 'Acens';
-  src: url('../fonts/acens-webfont.woff') format('woff'),
+  src: url('../fonts/acens-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/acens-webfont.woff') format('woff'),
        url('../fonts/acens-webfont.ttf') format('truetype'),
        url('../fonts/acens-webfont.svg#Acens') format('svg');
 }
