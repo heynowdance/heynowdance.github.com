@@ -3,7 +3,7 @@ body {
 }
 
 #container {
-  padding: 30px;
+  margin: 30px;
   position: absolute;
   left: 50%;
 }
@@ -59,24 +59,16 @@ body {
   left: 425px;
 }
 
-@font-face { /* IE */
-    font-family: 'LoboTommyRegular';
-    src: url('../fonts/lobotommy-webfont.eot');
-}
-
-@font-face { /* The rest of the world */
+@font-face {
   font-family: 'LoboTommyRegular';
-  src: url(http://:/) format("No-IE-404"),
-       url('../fonts/lobotommy-webfont.ttf') format('truetype');
+  src: url('../fonts/lobotommy-webfont.woff') format('woff'),
+       url('../fonts/lobotommy-webfont.ttf') format('truetype'),
+       url('../fonts/lobotommy-webfont.svg#LoboTommyRegular') format('svg');
 }
 
-@font-face { /* IE */
-    font-family: 'Acens';
-    src: url('../fonts/acens-webfont.eot');
-}
-
-@font-face { /* The rest of the world */
+@font-face {
   font-family: 'Acens';
-  src: url(http://:/) format("No-IE-404"),
-       url('../fonts/acens-webfont.ttf') format('truetype');
+  src: url('../fonts/acens-webfont.woff') format('woff'),
+       url('../fonts/acens-webfont.ttf') format('truetype'),
+       url('../fonts/acens-webfont.svg#Acens') format('svg');
 }
