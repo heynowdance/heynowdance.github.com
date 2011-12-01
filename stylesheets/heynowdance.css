@@ -12,7 +12,7 @@ body {
   position: absolute;
   left: -400px;
   width: 800px;
-  height: 598px;
+  height: 600px;
   background: url('../images/heynowmain.png');
 }
 
@@ -57,8 +57,52 @@ body {
 }
 
 #contact_info {
-  top: 582px;
+  top: 584px;
   left: 425px;
+}
+
+#links {
+  top: 280px;
+  left: 5px;
+  width: 790px;
+}
+
+#links ul {
+  margin: 0px;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+#links ul li {
+  display: inline;
+  margin-left: 8px;
+  margin-right: 9px;
+}
+
+#links ul li a
+{
+  text-decoration: none;
+  font-family: LoboTommyRegular;
+  font-size: 38px;
+  font-weight: lighter;
+  font-style: normal;
+}
+
+#links ul li a.winter {
+  color: #ff4848;
+}
+
+#links ul li a.spring {
+  color: #f0ff59;
+}
+
+#links ul li a.summer {
+  color: #73ff77;
+}
+
+#links ul li a.autumn {
+  color: #b09bc0;
 }
 
 @font-face {

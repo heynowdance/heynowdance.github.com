@@ -16,7 +16,6 @@
 }
 
 .text h2 {
-  color: #000000;
   font-size: 30px;
   font-weight: lighter;
   font-style: normal;
@@ -26,21 +25,75 @@
 
 .text p {
   color: #b09bc0;
-  font-size: 26px;
+  font-size: 14px;
   font-family: Acens;
-  font-weight: lighter;
-  font-style: normal;
   margin: 0px;
 }
 
 #title {
   width: 790px;
-  top: 470px;
+  top: 490px;
   left: 10px;
 }
 
 #subtitle {
-  top: 570px;
-  left: 615px;
+  top: 585px;
+  left: 688px;
   width: 185px;
+}
+
+#prev_season {
+  top: 442px;
+  left: 206px;
+  width: 286px;
+  height: 83px;
+}
+
+#prev_season img {
+  display: none;
+}
+
+#next_season {
+  top: 431px;
+  left: 453px;
+  width: 313px;
+  height: 103px;
+}
+
+#next_season img {
+  display: none;
+}
+
+#program {
+  top: 10px;
+  left: 20px;
+}
+
+#program ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+#program ul li {
+  margin-bottom: 7px;
+}
+
+#program ul li a
+{
+  text-decoration: none;
+  font-family: Acens;
+  font-size: 15px;
+  color: #000000;
+}
+
+#program ul li ul {
+  margin-top: -2px;
+  margin-bottom: 8px;
+}
+
+#program ul li ul li {
+  margin-bottom: 1px;
+  margin-top: -2px;
+  margin-left: 15px;
 }
