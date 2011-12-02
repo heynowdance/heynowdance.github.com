@@ -2,11 +2,7 @@
   background: url('../../images/2011/autumn.png');
 }
 
-.text {
-  position: absolute;
-}
-
-.text h1 {
+.absolute h1 {
   color: #b09bc0;
   font-size: 84px;
   font-family: LoboTommyRegular;
@@ -15,7 +11,7 @@
   margin: 0px;
 }
 
-.text h2 {
+.absolute h2 {
   font-size: 30px;
   font-weight: lighter;
   font-style: normal;
@@ -23,7 +19,7 @@
   margin: 0px;
 }
 
-.text p {
+.absolute p {
   color: #b09bc0;
   font-size: 14px;
   font-family: Acens;
@@ -42,26 +38,20 @@
   width: 185px;
 }
 
+.navigation img a {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
 #prev_season {
   top: 442px;
   left: 206px;
-  width: 286px;
-  height: 83px;
-}
-
-#prev_season img {
-  display: none;
 }
 
 #next_season {
   top: 431px;
   left: 453px;
-  width: 313px;
-  height: 103px;
-}
-
-#next_season img {
-  display: none;
 }
 
 #program {

@@ -16,11 +16,11 @@ body {
   background: url('../images/heynowmain.png');
 }
 
-.text {
+.absolute {
   position: absolute;
 }
 
-.text h1 {
+.absolute h1 {
   color: #f0ff59;
   font-size: 84px;
   font-family: LoboTommyRegular;
@@ -29,7 +29,7 @@ body {
   margin: 0px;
 }
 
-.text h2 {
+.absolute h2 {
   color: #000000;
   font-size: 30px;
   font-weight: lighter;
