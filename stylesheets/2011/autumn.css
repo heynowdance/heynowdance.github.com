@@ -38,10 +38,14 @@
   width: 185px;
 }
 
-.navigation img a {
+.navigation img {
   margin: 0px;
   padding: 0px;
   border: 0px;
+}
+
+.navigation img.hidden{
+  visibility: hidden;
 }
 
 #prev_season {
