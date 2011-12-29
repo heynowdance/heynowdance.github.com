@@ -8,13 +8,39 @@
   	<link rel="stylesheet" type="text/css" href="../stylesheets/heynowdance.css" />
   	<link rel="stylesheet" type="text/css" href="../stylesheets/2011/autumn.css" />
   	<link rel="icon" type="image/ico" href="../images/favicon.ico" />
+  	
     <script type="text/javascript" src="../javascripts/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="../javascripts/jquery-ui-1.8.16.js"></script>
     <script type="text/javascript" src="../javascripts/heynowdance_season.js"></script>
+    <script type="text/javascript" src="../javascripts/polygon.js"></script>
+    <script type="text/javascript" src="../javascripts/navigation.js"></script>
+    <script type="text/javascript">
+      // Set up some polygons
+      var prevPoints = [
+        new heynowdance.Point(20, 20),
+        new heynowdance.Point(20, 20),
+        new heynowdance.Point(20, 20),
+        new heynowdance.Point(20, 20)
+      ];
+      var nextPoints = [
+        new heynowdance.Point(20, 20),
+        new heynowdance.Point(20, 20),
+        new heynowdance.Point(20, 20),
+        new heynowdance.Point(20, 20)
+      ];
+      
+      var prevSeason = new heynowdance.Polygon(prevPoints);
+      var nextSeason = new heynowdance.Polygon(nextPoints);
+      
+      $(document).ready(function() {
+    	  heynowdance.currentView = $("#home");
+    	});  
+    </script>
 </head>
 
 <body>
   <div id="container">
-    <div id="content">
+    <div id="home" class="content">
       <div id="title" class="absolute">
         <p><h1>heynow dance</h1></p>
       </div>
@@ -24,20 +50,20 @@
 
       <div id="program" class="absolute">
         <ul>
-          <li><a href="javascript: featureContent(0);">midnight milk</a></li>
-          <li><a href="javascript: featureContent(1);">a few thoughts
+          <li><a href="javascript: heynowdance.navigateToView('performance_1');">midnight milk</a></li>
+          <li><a href="javascript: heynowdance.navigateToView('performance_2');">a few thoughts
             <ul>
               <li>for me</li>
             </ul>
           </a></li>
-          <li><a href="javascript: featureContent(2);">used all up</a></li>
-          <li><a href="javascript: featureContent(3);">3 parts
+          <li><a href="javascript: heynowdance.navigateToView('performance_3');">used all up</a></li>
+          <li><a href="javascript: heynowdance.navigateToView('performance_4');">3 parts
             <ul>
               <li>choreography, 1</li>
               <li>part improv</li>
             </ul>
           </a></li>
-          <li><a href="javascript: featureContent(4);">group improv</a></li>
+          <li><a href="javascript: heynowdance.navigateToView('performance_5');">connector improv</a></li>
         </ul>
       </div>
 
@@ -48,7 +74,104 @@
         <a href="winter.html"><img class="hidden" src="../images/2011/autumn_next.png"></img></a>
       </div>
     </div>
+    
+    <div id="performance_1" class="content">
+      <div id="title" class="absolute">
+        <p><h1>heynow dance</h1></p>
+      </div>
+      <div id="subtitle" class="absolute">
+        <p>autumn 2011</p>
+      </div>
+
+      <div id="program" class="absolute">
+        <ul>
+          <li><a href="javascript: heynowdance.navigateToView('home');">home</a> | midnight milk</li>
+        </ul>
+      </div>
+
+      <div class="featured_video">
+        <iframe title="YouTube video player" width="320" height="271" src="http://www.youtube.com/embed/ryRHpZj2-18?wmode=transparent" frameborder="0" wmode="Opaque" allowfullscreen></iframe>
+      </div>
+    </div>
+    
+    <div id="performance_2" class="content">
+      <div id="title" class="absolute">
+        <p><h1>heynow dance</h1></p>
+      </div>
+      <div id="subtitle" class="absolute">
+        <p>autumn 2011</p>
+      </div>
+
+      <div id="program" class="absolute">
+        <ul>
+          <li><a href="javascript: heynowdance.navigateToView('home');">home</a> | a few thoughts for me</li>
+        </ul>
+      </div>
+
+      <div class="featured_video">
+        <iframe title="YouTube video player" width="320" height="271" src="http://www.youtube.com/embed/Kv_6Km5SHBQ?wmode=transparent" frameborder="0" wmode="Opaque" allowfullscreen></iframe>
+      </div>
+    </div>
+    
+    <div id="performance_3" class="content">
+      <div id="title" class="absolute">
+        <p><h1>heynow dance</h1></p>
+      </div>
+      <div id="subtitle" class="absolute">
+        <p>autumn 2011</p>
+      </div>
+
+      <div id="program" class="absolute">
+        <ul>
+          <li><a href="javascript: heynowdance.navigateToView('home');">home</a> | used all up</li>
+        </ul>
+      </div>
+
+      <div class="featured_video">
+        <iframe title="YouTube video player" width="320" height="271" src="http://www.youtube.com/embed/DZbdz4FbuQ4?wmode=transparent" frameborder="0" wmode="Opaque" allowfullscreen></iframe>
+      </div>
+    </div>
+    
+    <div id="performance_4" class="content">
+      <div id="title" class="absolute">
+        <p><h1>heynow dance</h1></p>
+      </div>
+      <div id="subtitle" class="absolute">
+        <p>autumn 2011</p>
+      </div>
+
+      <div id="program" class="absolute">
+        <ul>
+          <li><a href="javascript: heynowdance.navigateToView('home');">home</a> | 3 parts choreography, 1 part improv</li>
+        </ul>
+      </div>
+
+      <div class="featured_video">
+        <iframe title="YouTube video player" width="320" height="271" src="http://www.youtube.com/embed/woy9SV41j8k?wmode=transparent" frameborder="0" wmode="Opaque" allowfullscreen></iframe>
+      </div>
+    </div>
+    
+    <div id="performance_5" class="content">
+      <div id="title" class="absolute">
+        <p><h1>heynow dance</h1></p>
+      </div>
+      <div id="subtitle" class="absolute">
+        <p>autumn 2011</p>
+      </div>
+
+      <div id="program" class="absolute">
+        <ul>
+          <li><a href="javascript: heynowdance.navigateToView('home');">home</a> | connector improv</li>
+        </ul>
+      </div>
+
+      <div class="featured_video">
+        <iframe title="YouTube video player" width="320" height="271" src="http://www.youtube.com/embed/3OKgCVDSBHA?wmode=transparent" frameborder="0" wmode="Opaque" allowfullscreen></iframe>
+      </div>
+    </div>
+    
   </div>
+</div>
 </body>
 
 </html>

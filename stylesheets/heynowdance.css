@@ -2,17 +2,26 @@ body {
   background-color: #e8b5a7;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 #container {
   margin-top: 35px;
   position: absolute;
   left: 50%;
 }
 
-#content {
+.content {
   position: absolute;
   left: -400px;
   width: 800px;
   height: 600px;
+  z-index: 0;
+}
+
+#home {
   background: url('../images/heynowmain.png');
 }
 
