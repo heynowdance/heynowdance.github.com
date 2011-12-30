@@ -6,19 +6,14 @@
 .featured_video { position: absolute; }
 
 #performance_1 { background: url('../../images/2011/autumn_performance_1.png'); }
-#performance_1 .featured_video { left: 25px; top: 80px; }
 
 #performance_2 { background: url('../../images/2011/autumn_performance_2.png'); }
-#performance_2 .featured_video { left: 275px; top: 60px; }
 
 #performance_3 { background: url('../../images/2011/autumn_performance_3.png'); }
-#performance_3 .featured_video { left: 75px; top: 220px; }
 
 #performance_4 { background: url('../../images/2011/autumn_performance_4.png'); }
-#performance_4 .featured_video { left: 25px; top: 40px; }
 
 #performance_5 { background: url('../../images/2011/autumn_performance_5.png'); }
-#performance_5 .featured_video { left: 200px; top: 60px; }
 
 .absolute h1 {
   color: #b09bc0;
@@ -76,32 +71,41 @@
   left: 453px;
 }
 
-#program {
+.program {
   top: 10px;
   left: 20px;
 }
 
-#program ul {
+.program ul {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
 }
 
-#program ul li {
+.program ul li {
   margin-bottom: 7px;
   font-family: Acens;
   font-size: 15px;
   color: #000000;
 }
 
-
-#program ul li ul {
+.program ul li ul {
   margin-top: -2px;
   margin-bottom: 8px;
 }
 
-#program ul li ul li {
+.program ul li ul li {
   margin-bottom: 1px;
   margin-top: -2px;
   margin-left: 15px;
+}
+
+.credits {
+  width: 400px;
+  top: 10px;
+  left: 380px;
+}
+
+.credits ul {
+  text-align: right;
 }
