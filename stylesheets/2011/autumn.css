@@ -1,19 +1,25 @@
 #home {
-  background: url('../../images/2011/autumn.png');
+  background: url('../../images/2011/autumn.jpg');
   z-index: 2;
 }
 
-.featured_video { position: absolute; }
+#title {
+  width: 790px;
+  top: 490px;
+  left: 10px;
+}
 
-#performance_1 { background: url('../../images/2011/autumn_performance_1.png'); }
+#subtitle {
+  top: 585px;
+  left: 688px;
+  width: 185px;
+}
 
-#performance_2 { background: url('../../images/2011/autumn_performance_2.png'); }
-
-#performance_3 { background: url('../../images/2011/autumn_performance_3.png'); }
-
+#performance_1 { background: url('../../images/2011/autumn_performance_1.jpg'); }
+#performance_2 { background: url('../../images/2011/autumn_performance_2.jpg'); }
+#performance_3 { background: url('../../images/2011/autumn_performance_3.jpg'); }
 #performance_4 { background: url('../../images/2011/autumn_performance_4.png'); }
-
-#performance_5 { background: url('../../images/2011/autumn_performance_5.png'); }
+#performance_5 { background: url('../../images/2011/autumn_performance_5.jpg'); }
 
 .absolute h1 {
   color: #b09bc0;
@@ -37,18 +43,6 @@
   font-size: 14px;
   font-family: Acens;
   margin: 0px;
-}
-
-#title {
-  width: 790px;
-  top: 490px;
-  left: 10px;
-}
-
-#subtitle {
-  top: 585px;
-  left: 688px;
-  width: 185px;
 }
 
 .navigation img {
