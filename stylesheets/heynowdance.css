@@ -114,6 +114,36 @@ a {
   color: #b09bc0;
 }
 
+.program {
+  top: 10px;
+  left: 20px;
+  z-index: 1;
+}
+
+.program ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.program ul li {
+  margin-bottom: 7px;
+  font-family: Acens;
+  font-size: 15px;
+  color: #000000;
+}
+
+.program ul li ul {
+  margin-top: -2px;
+  margin-bottom: 8px;
+}
+
+.program ul li ul li {
+  margin-bottom: 1px;
+  margin-top: -2px;
+  margin-left: 15px;
+}
+
 @font-face {
   font-family: 'LoboTommyRegular';
   src: url('../fonts/lobotommy-webfont.eot?#iefix') format('embedded-opentype'),
