@@ -73,7 +73,7 @@
 }
 
 .program {
-  top: 10px;
+  top: 13px;
   left: 20px;
 }
 
@@ -84,14 +84,14 @@
 }
 
 .program ul li {
-  margin-bottom: 7px;
+  margin-bottom: 13px;
   font-family: Acens;
   font-size: 15px;
   color: #000000;
 }
 
 .program ul li ul {
-  margin-top: -2px;
+  margin-top: 0px;
   margin-bottom: 8px;
 }
 
