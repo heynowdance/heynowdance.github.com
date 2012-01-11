@@ -110,3 +110,7 @@
 .credits ul {
   text-align: right;
 }
+
+.credits ul li {
+  margin-bottom: 2px;
+}
