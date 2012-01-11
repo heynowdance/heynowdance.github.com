@@ -85,7 +85,17 @@
             coords="34, 0, 257, 0, 277, 68, 0, 67">
           </area>
         </map>
+        <map name="prev_season_overlap_map">
+          <area shape="poly"
+            onmouseover="$('#prev_season_transparency').css('z-index', 0);
+              $('#prev_season_image').css('z-index', 3);
+              $('#prev_season_image').removeClass('hidden');
+              $('#next_season_transparency').css('z-index', 2);"
+            coords="34, 0, 257, 0, 277, 68, 0, 67">
+          </area>
+        </map>
       </div>
+      
       <div id="next_season" class="absolute season">
         <img id="next_season_image" class="absolute hidden" src="../images/2011/autumn_next.png" usemap="#next_season_map"></img>
         <img id="next_season_transparency" class="absolute transparency" src="../images/2011/autumn_next_transparency.png" usemap="#next_season_transparency_map"></img>
