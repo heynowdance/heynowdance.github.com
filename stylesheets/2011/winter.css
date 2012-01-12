@@ -1,13 +1,22 @@
 #home {
-  background: url('../../images/2011/winter.png');
+  background: url('../../images/2011/winter.jpg');
+  z-index: 2;
 }
 
-.text {
-  position: absolute;
+#title {
+  width: 790px;
+  top: 490px;
+  left: 10px;
 }
 
-.text h1 {
-  color: #b09bc0;
+#subtitle {
+  top: 585px;
+  left: 688px;
+  width: 185px;
+}
+
+.absolute h1 {
+  color: #ff4848;
   font-size: 84px;
   font-family: LoboTommyRegular;
   font-weight: lighter;
@@ -15,8 +24,7 @@
   margin: 0px;
 }
 
-.text h2 {
-  color: #000000;
+.absolute h2 {
   font-size: 30px;
   font-weight: lighter;
   font-style: normal;
@@ -24,25 +32,60 @@
   margin: 0px;
 }
 
-#title {
-  width: 790px;
-  top: -10px;
-  left: 10px;
+.absolute p {
+  color: #ff4848;
+  font-size: 14px;
+  font-family: Acens;
+  margin: 0px;
 }
 
-#subtitle {
-  top: 95px;
-  left: 40px;
-  width: 760px;
+.season img {
+  top: 0;
+  left: 0;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
 }
 
-#main_text {
-  top: 415px;
-  left: 132px;
-  width: 650px;
+.season img.hidden {
+  visibility: hidden;
+  z-index: 0;
 }
 
-#contact_info {
-  top: 582px;
-  left: 425px;
+.season img.transparency {
+  z-index: 1;
+}
+
+#prev_season {
+  top: 205px;
+  left: 177px;
+}
+
+.program {
+  top: 13px;
+  left: 20px;
+}
+
+.program ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.program ul li {
+  margin-bottom: 13px;
+  font-family: Acens;
+  font-size: 15px;
+  color: #000000;
+}
+
+.program ul li ul {
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+.program ul li ul li {
+  margin-bottom: 1px;
+  margin-top: -2px;
+  margin-left: 15px;
 }
