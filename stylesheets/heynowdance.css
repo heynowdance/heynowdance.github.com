@@ -1,5 +1,5 @@
 body {
-  background-color: #e8b5a7;
+  background-color: #cda9a7;
 }
 
 a {
@@ -40,10 +40,10 @@ a {
 
 .absolute h2 {
   color: #000000;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: lighter;
   font-style: normal;
-  font-family: Acens;
+  font-family: Eurostile;
   margin: 0px;
 }
 
@@ -128,7 +128,7 @@ a {
 
 .program ul li {
   margin-bottom: 7px;
-  font-family: Acens;
+  font-family: Eurostile;
   font-size: 15px;
   color: #000000;
 }
@@ -157,9 +157,9 @@ a {
 }
 
 @font-face {
-  font-family: 'Acens';
-  src: url('../fonts/acens-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/acens-webfont.woff') format('woff'),
-       url('../fonts/acens-webfont.ttf') format('truetype'),
-       url('../fonts/acens-webfont.svg#Acens') format('svg');
+  font-family: 'Eurostile';
+  src: url('../fonts/eurostile-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/eurostile-webfont.woff') format('woff'),
+       url('../fonts/eurostile-webfont.ttf') format('truetype'),
+       url('../fonts/eurostile-webfont.svg#Eurostile') format('svg');
 }

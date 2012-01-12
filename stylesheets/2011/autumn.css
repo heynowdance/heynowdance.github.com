@@ -1,12 +1,19 @@
+body {
+  background-color: #957e77;
+}
+
 #home {
   background: url('../../images/2011/autumn.jpg');
   z-index: 2;
 }
 
 #title {
-  width: 790px;
+  padding-left: 15px;
+  width: 785px;
   top: 490px;
-  left: 10px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
 }
 
 #subtitle {
@@ -34,14 +41,14 @@
   font-size: 30px;
   font-weight: lighter;
   font-style: normal;
-  font-family: Acens;
+  font-family: Eurostile;
   margin: 0px;
 }
 
 .absolute p {
   color: #b09bc0;
   font-size: 14px;
-  font-family: Acens;
+  font-family: Eurostile;
   margin: 0px;
 }
 
@@ -85,7 +92,7 @@
 
 .program ul li {
   margin-bottom: 13px;
-  font-family: Acens;
+  font-family: Eurostile;
   font-size: 15px;
   color: #000000;
 }
