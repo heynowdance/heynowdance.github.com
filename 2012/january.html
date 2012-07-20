@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+  <title>heynowdance.</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  	<meta name="author" content="Casual Art" />
+  	<meta name="description" content="heynowdance: casual art in home spaces. january 2011." />
+  	<link rel="stylesheet" type="text/css" href="../stylesheets/heynowdance.css" />
+  	<link rel="stylesheet" type="text/css" href="../stylesheets/2011/winter.css" />
+  	<link rel="stylesheet" type="text/css" href="../plugins/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+  	<link rel="icon" type="image/ico" href="../images/favicon.ico" />
+  	
+    <script type="text/javascript" src="../plugins/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="../plugins/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="../javascripts/navigation.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <div id="home" class="content">
+      <div id="title" class="absolute">
+        <p><h1>heynow dance</h1></p>
+      </div>
+      <div id="subtitle" class="absolute">
+        <p>winter 2011</p>
+      </div>
+
+      <div id="home_program" class="absolute program">
+        <ul>
+          <li>
+            <a href="../index.html">home</a>
+            | <a href="autumn.html">autumn</a>
+            | <a href="summer.html">summer</a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="prev_season" class="absolute season">
+        <img id="prev_season_image" class="absolute hidden" src="../images/2011/winter_prev.png" usemap="#prev_season_map"></img>
+        <img id="prev_season_transparency" class="absolute transparency" src="../images/2011/winter_prev_transparency.png" usemap="#prev_season_transparency_map"></img>
+        <map name="prev_season_map">
+          <area shape="circle"
+            href="autumn.html"
+            onmouseout="$('#prev_season_image').addClass('hidden');
+              $('#prev_season_transparency').css('z-index', 1);"
+            coords="82, 82, 82">
+          </area>
+        </map>
+        <map name="prev_season_transparency_map">
+          <area shape="circle"
+            onmouseover="$('#prev_season_transparency').css('z-index', 0);
+              $('#prev_season_image').css('z-index', 3);
+              $('#prev_season_image').removeClass('hidden');
+              $('#next_season_transparency').css('z-index', 2);"
+            coords="82, 82, 82">
+          </area>
+        </map>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

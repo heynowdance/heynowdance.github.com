@@ -1,0 +1,69 @@
+dates:
+august
+september
+january
+july
+
+font:
+
+
+january dances:
+
+a made up duet:
+  irineo cabreros
+  halimeda glickman-hoch
+modern dance face (off?)
+  christin collins
+  amy mastrangelo
+hands:
+  christin collins
+  cary kandel
+  stephanie lane
+  amy mastrangelo
+  meghan riling
+  anna schechinger
+  editing: adam goldstein
+shannon halbrook:
+  bottle
+  heartbreak
+  i walk
+  surfing
+  shannon halbrook
+connector:
+  insignia
+again:
+  amy mastrangelo
+  meghan riling
+improv:
+  
+  
+
+july dances:
+  afternoon
+    rose abramoff
+    stella gaitani
+    erin mcdonagh
+    shannon halbrook
+    brad san martin
+  patterns
+    hazel lever
+    shanna wiggins
+    o F F Love
+  bossayesva
+    amy mastrangelo
+    meghan riling
+    roberto menescal e seu conjunto
+  outspoken in silence
+    margin randow-orlosky
+    max richter
+  the colors run
+    liam morley
+    dana peterson
+  improv
+    amy mastrangelo
+    meghan riling
+    rose abramoff
+    stella gaitani
+    erin mcdonagh
+    hazel lever
+    shanna wiggins

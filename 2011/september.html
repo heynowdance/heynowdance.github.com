@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<head>
+  <title>heynowdance.</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  	<meta name="author" content="Casual Art" />
+  	<meta name="description" content="heynowdance: casual art in home spaces. september 2011." />
+  	<link rel="stylesheet" type="text/css" href="../stylesheets/heynowdance.css" />
+  	<link rel="stylesheet" type="text/css" href="../stylesheets/2011/september.css" />
+  	<link rel="stylesheet" type="text/css" href="../plugins/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+  	<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+  	<link rel="icon" type="image/ico" href="../images/favicon.ico" />
+  	
+    <script type="text/javascript" src="../plugins/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="../plugins/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="../javascripts/navigation.js"></script>
+    <script type="text/javascript">  
+      $(document).ready(function() {
+        // View preparation
+        heynowdance.views = [$("#home"), $("#performance_1"), $("#performance_2"), $("#performance_3"), $("#performance_4"), $("#performance_5")];
+        heynowdance.currentView = $("#home");
+        
+        // If a specific view was requested, switch to it
+        var requestedView = document.location.hash;
+        if (requestedView) {
+          heynowdance.navigateToView(requestedView.substring(1));
+        }
+    	  
+    	  // Fancybox preparation
+      	$(".iframe").fancybox({type: "iframe"});
+    	});
+    </script>
+</head>
+
+<body>
+  <div id="container">
+    <div id="home" class="content">
+      <div id="title" class="absolute">
+        <p><h1>heynow dance</h1></p>
+      </div>
+      <div id="subtitle" class="absolute">
+        <p>autumn 2011</p>
+      </div>
+
+      <div id="home_program" class="absolute program">
+        <ul>
+          <li>
+            <a href="../index.html">home</a>
+             | <a href="august.html">august</a>
+          </li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(1);">midnight milk</span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(2);">a few thoughts
+            <ul>
+              <li>for me</li>
+            </ul>
+          </span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(3);">used all up</span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(4);">3 parts
+            <ul>
+              <li>choreography, 1</li>
+              <li>part improv</li>
+            </ul>
+          </span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(5);">connector improv</span></li>
+        </ul>
+      </div>
+
+      <div id="prev_season" class="absolute season">
+        <img id="prev_season_image" class="absolute hidden" src="../images/2011/september_prev.png" usemap="#september_season_map"></img>
+        <img id="prev_season_transparency" class="absolute transparency" src="../images/2011/september_prev_transparency.png" usemap="#prev_season_transparency_map"></img>
+        <map name="prev_season_map">
+          <area shape="poly"
+            href="august.html"
+            onmouseout="$('#prev_season_image').addClass('hidden');
+              $('#prev_season_transparency').css('z-index', 1);"
+            coords="34, 0, 257, 0, 277, 68, 0, 67">
+          </area>
+        </map>
+        <map name="prev_season_transparency_map">
+          <area shape="poly"
+            onmouseover="$('#prev_season_transparency').css('z-index', 0);
+              $('#prev_season_image').css('z-index', 3);
+              $('#prev_season_image').removeClass('hidden');
+              $('#next_season_transparency').css('z-index', 2);"
+            coords="34, 0, 257, 0, 277, 68, 0, 67">
+          </area>
+        </map>
+        <map name="prev_season_overlap_map">
+          <area shape="poly"
+            onmouseover="$('#prev_season_transparency').css('z-index', 0);
+              $('#prev_season_image').css('z-index', 3);
+              $('#prev_season_image').removeClass('hidden');
+              $('#next_season_transparency').css('z-index', 2);"
+            coords="34, 0, 257, 0, 277, 68, 0, 67">
+          </area>
+        </map>
+      </div>
+      
+      <div id="next_season" class="absolute season">
+        <img id="next_season_image" class="absolute hidden" src="../images/2011/september_next.png" usemap="#next_season_map"></img>
+        <img id="next_season_transparency" class="absolute transparency" src="../images/2011/september_next_transparency.png" usemap="#next_season_transparency_map"></img>
+        <map name="next_season_map">
+          <area shape="poly"
+            href="../2012/january.html"
+            onmouseout="$('#next_season_image').addClass('hidden');
+              $('#next_season_transparency').css('z-index', 1);"
+            coords="9, 10, 216, 8, 302, 80, 32, 80">
+          </area>
+        </map>
+        <map name="next_season_transparency_map">
+          <area shape="poly"
+            onmouseover="$('#next_season_transparency').css('z-index', 0);
+              $('#next_season_image').css('z-index', 3);
+              $('#next_season_image').removeClass('hidden');
+              $('#prev_season_transparency').css('z-index', 2);"
+            coords="9, 10, 216, 8, 302, 80, 32, 80">
+          </area>
+        </map>
+      </div>
+    </div>
+    
+    <div id="performance_1" class="content">
+      <div id="title" class="absolute">
+        <p><h1>heynow dance</h1></p>
+      </div>
+      <div id="subtitle" class="absolute">
+        <p>september 2011</p>
+      </div>
+
+      <div id="performance_1_program" class="absolute program">
+        <ul>
+          <li>
+            <span class="clickable" onclick="heynowdance.navigateToView(0);">home</span>
+             | <a class="iframe" href="http://www.youtube.com/embed/ryRHpZj2-18?hd=1" hideOnContentClick="false">video</a>
+             | <a href="">pictures</a>
+          </li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(1);">midnight milk</span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(2);">a few thoughts
+            <ul>
+              <li>for me</li>
+            </ul>
+          </span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(3);">used all up</span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(4);">3 parts
+            <ul>
+              <li>choreography, 1</li>
+              <li>part improv</li>
+            </ul>
+          </span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(5);">connector improv</span></li>
+        </ul>
+      </div>
+      
+      <div id="performance_1_credits" class="absolute program credits">
+        <ul>
+          <li>MIDNIGHT MILK</li>
+          <li>Kiyomi Lepon</li>
+          <li>Amanda Hameline</li>
+          <li>Madison</li>
+          <li>Meghan Riling</li>
+          <li>Julia Havard</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div id="performance_2" class="content">
+      <div id="title" class="absolute">
+        <p><h1>heynow dance</h1></p>
+      </div>
+      <div id="subtitle" class="absolute">
+        <p>september 2011</p>
+      </div>
+
+      <div id="performance_2_program" class="absolute program">
+        <ul>
+          <li>
+            <span class="clickable" onclick="heynowdance.navigateToView(0);">home</span>
+             | <a class="iframe" href="http://www.youtube.com/embed/Kv_6Km5SHBQ?hd=1" hideOnContentClick="false">video</a>
+             | <a href="">pictures</a>
+          </li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(1);">midnight milk</span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(2);">a few thoughts
+            <ul>
+              <li>for me</li>
+            </ul>
+          </span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(3);">used all up</span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(4);">3 parts
+            <ul>
+              <li>choreography, 1</li>
+              <li>part improv</li>
+            </ul>
+          </span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(5);">connector improv</span></li>
+        </ul>
+      </div>
+      
+      <div id="performance_2_credits" class="absolute program credits">
+        <ul>
+          <li>A FEW THOUGHTS FOR ME</li>
+          <li>Stella Gaitani</li>
+          <li>Meghan Riling</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div id="performance_3" class="content">
+      <div id="title" class="absolute">
+        <p><h1>heynow dance</h1></p>
+      </div>
+      <div id="subtitle" class="absolute">
+        <p>september 2011</p>
+      </div>
+
+      <div id="performance_3_program" class="absolute program">
+        <ul>
+          <li>
+            <span class="clickable" onclick="heynowdance.navigateToView(0);">home</span>
+             | <a class="iframe" href="http://www.youtube.com/embed/DZbdz4FbuQ4?hd=1" hideOnContentClick="false">video</a>
+             | <a href="">pictures</a>
+          </li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(1);">midnight milk</span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(2);">a few thoughts
+            <ul>
+              <li>for me</li>
+            </ul>
+          </span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(3);">used all up</span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(4);">3 parts
+            <ul>
+              <li>choreography, 1</li>
+              <li>part improv</li>
+            </ul>
+          </span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(5);">connector improv</span></li>
+        </ul>
+      </div>
+      
+      <div id="performance_3_credits" class="absolute program credits">
+        <ul>
+          <li>USED ALL UP</li>
+          <li>Meghan Riling</li>
+          <li>Adam Goldstein</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div id="performance_4" class="content">
+      <div id="title" class="absolute">
+        <p><h1>heynow dance</h1></p>
+      </div>
+      <div id="subtitle" class="absolute">
+        <p>september 2011</p>
+      </div>
+
+      <div id="performance_4_program" class="absolute program">
+        <ul>
+          <li>
+            <span class="clickable" onclick="heynowdance.navigateToView(0);">home</span>
+             | <a class="iframe" href="http://www.youtube.com/embed/woy9SV41j8k?hd=1" hideOnContentClick="false">video</a>
+             | <a href="">pictures</a>
+          </li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(1);">midnight milk</span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(2);">a few thoughts
+            <ul>
+              <li>for me</li>
+            </ul>
+          </span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(3);">used all up</span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(4);">3 parts
+            <ul>
+              <li>choreography, 1</li>
+              <li>part improv</li>
+            </ul>
+          </span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(5);">connector improv</span></li>
+        </ul>
+      </div>
+      
+      <div id="performance_4_credits" class="absolute program credits">
+        <ul>
+          <li>3 PARTS CHOREOGRAPHY, 1 PART IMPROV
+          <li>Lauren Simpson</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div id="performance_5" class="content">
+      <div id="title" class="absolute">
+        <p><h1>heynow dance</h1></p>
+      </div>
+      <div id="subtitle" class="absolute">
+        <p>september 2011</p>
+      </div>
+
+      <div id="performance_5_program" class="absolute program">
+        <ul>
+          <li>
+            <span class="clickable" onclick="heynowdance.navigateToView(0);">home</span>
+             | <a class="iframe" href="http://www.youtube.com/embed/3OKgCVDSBHA?hd=1" hideOnContentClick="false">video</a>
+             | <a href="">pictures</a>
+          </li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(1);">midnight milk</span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(2);">a few thoughts
+            <ul>
+              <li>for me</li>
+            </ul>
+          </span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(3);">used all up</span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(4);">3 parts
+            <ul>
+              <li>choreography, 1</li>
+              <li>part improv</li>
+            </ul>
+          </span></li>
+          <li><span class="clickable" onclick="heynowdance.navigateToView(5);">connector improv</span></li>
+        </ul>
+      </div>
+      
+      <div id="performance_5_credits" class="absolute program credits">
+        <ul>
+          <li>CONNECTOR IMPROV</li>
+          <li>Neil Dean</li>
+          <li>David Guerette</li>
+          <li>Courtney Wagner</li>
+          <li>Anna Schechinger</li>
+          <li>Lauren Simpson</li>
+          <li>Kiyomi Lepon</li>
+          <li>Irineo Cabreros</li>
+          <li>Meghan Riling</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

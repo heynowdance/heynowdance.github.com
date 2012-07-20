@@ -43,7 +43,7 @@ a {
   font-size: 30px;
   font-weight: lighter;
   font-style: normal;
-  font-family: Acens;
+  font-family: 'Wire One';
   margin: 0px;
 }
 
@@ -128,7 +128,7 @@ a {
 
 .program ul li {
   margin-bottom: 7px;
-  font-family: Acens;
+  font-family: 'Wire One';
   font-size: 15px;
   color: #000000;
 }
@@ -154,12 +154,4 @@ a {
        url('../fonts/lobotommy-webfont.woff') format('woff'),
        url('../fonts/lobotommy-webfont.ttf') format('truetype'),
        url('../fonts/lobotommy-webfont.svg#LoboTommyRegular') format('svg');
-}
-
-@font-face {
-  font-family: 'Acens';
-  src: url('../fonts/acens-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/acens-webfont.woff') format('woff'),
-       url('../fonts/acens-webfont.ttf') format('truetype'),
-       url('../fonts/acens-webfont.svg#Acens') format('svg');
 }
